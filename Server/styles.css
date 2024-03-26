@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#main {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages li {
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    border-radius: 10px;
+    clear: both;
+}
+
+#messages li.sent {
+    float: right;
+    background-color: #007bff;
+    color: #fff;
+}
+
+#messages li.received {
+    float: left;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#footer {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#messageForm {
+    display: flex;
+}
+
+#messageForm input[type="text"] {
+    flex: 1;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+#messageForm input[type="submit"] {
+    background-color: #007bff; /* Blue color for send button */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+#messageForm input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
